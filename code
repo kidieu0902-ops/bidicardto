@@ -1,0 +1,6 @@
+birthday-card/
+├── index.html      page structure (cover, letter, cake)
+├── css/style.css   look, 3D page turn, candle effects
+├── js/main.js      flipping, space action, sparkles, candle positions
+├── assets/         your 4 images as JPGs
+└── README.md       GitHub Pages steps

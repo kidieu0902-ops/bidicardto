@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Birthday, Ngân Hà</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="stage" id="stage">
+    <!-- Each .leaf is one page of the book. It rotates around its left edge. -->
+    <div class="leaf">
+      <section class="face front" id="p1"><img src="assets/cover.jpg" alt="Birthday card cover for Ngân Hà"></section>
+      <div class="face back">✦</div>
+    </div>
+    <div class="leaf">
+      <section class="face front" id="p2">
+        <img class="env" src="assets/envelope.jpg" alt="Sealed blue envelope">
+        <img class="letter" src="assets/letter.jpg" alt="Letter to Ngân Hà from her friends">
+        <button class="seal" id="seal" aria-label="Open the letter"></button>
+      </section>
+      <div class="face back">✦</div>
+    </div>
+    <div class="leaf">
+      <section class="face front" id="p3">
+        <img src="assets/cake.jpg" alt="Birthday cake with lit candles">
+        <div class="toast">Chúc mừng sinh nhật, Ngân Hà ✦</div>
+      </section>
+      <div class="face back">✦</div>
+    </div>
+    <canvas id="fx"></canvas>
+  </main>
+  <nav class="bar">
+    <button class="nav" id="prev" aria-label="Previous page">‹</button>
+    <button class="key" id="key"><span class="k">space</span><span id="lbl" aria-live="polite"></span></button>
+    <button class="nav" id="next" aria-label="Next page">›</button>
+  </nav>
+  <script src="js/main.js"></script>
+</body>
+</html>
